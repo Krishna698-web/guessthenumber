@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Iso&family=Ubuntu:wght@700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    background: #181818;
+}
+
+.game-container{
+    /* width: 100%; */
+    text-align: center;
+}
+h1{
+    font-size: 5rem;
+    font-family: 'Rubik Iso', cursive;
+    margin: 3rem;
+    color: #FF4E50;
+}
+
+#playAgain{
+    margin: 2rem;
+    background-color: #A8E6CE;
+}
+
+.seciton{
+    display: flex;
+}
+
+#secretNum{
+    color: #181818;
+    font-size: 9rem;
+    font-weight: bold;
+    padding: 0px 5rem;
+    background-color: #F7DB4F;
+    border-radius: 4px;
+    margin: 0 auto;
+}
+
+
+button{
+    border: none;
+    padding: 1rem 2rem;
+    font-size: 2.5rem;
+    font-weight: bold;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+#check{
+    background-color: #FF8C94;
+}
+
+input{
+    font-size: 2rem;
+    padding: 8px 6rem;
+    text-align: center;
+    outline: none;
+    border: 3px solid #F7DB4F;
+    background: transparent;
+    color: #F7DB4F;
+    margin: 2rem 0;
+}
+
+.randomNumDiv{
+    position: relative;
+    margin-top: 3rem;
+}
+
+.randomNumDiv .line{
+    display: block;
+    height: 5px;
+    width: 100%;
+    background: #F7DB4F;
+    top: 48%;
+    z-index: -1;
+    position: absolute;
+}
+
+.section2{
+    margin-top: 5rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    gap: 2rem;
+}
+
+
+#scoreDisplay{
+    color: white;
+    text-align: left;
+    font-size: 2.5rem;
+}
+
+#scoreDisplay p{
+    margin: 1rem 0;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.styledText{
+    font-family: 'Rubik Iso', cursive;
+    color: #FECEAB;
+    font-weight: bold;
+}
+
+.inner-section{
+    width: 45%;
+}
+
+@media (min-width: 850px) {
+    h1{
+        font-size: 8rem;
+        margin: 5rem;
+    }
+
+    .section2{
+        flex-direction: row;
+    }
+
+    #scoreDisplay{
+        font-size: 4rem;
+    }
+
+    input{
+        font-size: 3rem;
+    }
+}

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guess the number</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="game-container">
+        <h1 class="heading">Guess the Number</h1>
+        <button id="playAgain">Again</button>
+        <div class="section1 randomNumDiv seciton">
+            <span class="line"></span>
+            <span id="secretNum">?</span>
+        </div>
+        <div class="section2 seciton">
+            <div id='scoreCheck' class="inner-section">
+                <input class="guess" type="number" min="1" max="20">
+                <br>
+                <button id="check">Check!</button>
+            </div>
+            <div id="scoreDisplay" class="inner-section">
+                <span class="message styledText">Let's begin the game</span>
+                <p>Score: <span class="score styledText">20</span></p>
+                <p>Highest score: <span class="highScore styledText">?</span></p>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="script.js"></script>
+</html>
